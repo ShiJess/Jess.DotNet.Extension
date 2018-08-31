@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RegExpLib\RegExpLib.csproj">
+    <ProjectReference Include="..\..\RegExpLib\RegExpLib.csproj">
       <Project>{c15fb826-c79a-44ca-b438-e58d31e65bd6}</Project>
       <Name>RegExpLib</Name>
     </ProjectReference>
