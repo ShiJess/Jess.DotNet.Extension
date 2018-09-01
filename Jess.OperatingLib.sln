@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibTest", "LibTest", "{BB2F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegExpTest", "LibTest\RegExpTest\RegExpTest.csproj", "{506180C1-BCC9-4005-9120-CFE00E323BD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jess.ImageProcessing", "Jess.ImageProcessing\Jess.ImageProcessing.csproj", "{ADA730BC-6A1D-4D55-A131-4E7D209025A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessingTest", "LibTest\ImageProcessingTest\ImageProcessingTest.csproj", "{0F5B083A-6417-4BEA-AFF9-2997349345B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,21 @@ Global
 		{506180C1-BCC9-4005-9120-CFE00E323BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{506180C1-BCC9-4005-9120-CFE00E323BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{506180C1-BCC9-4005-9120-CFE00E323BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA730BC-6A1D-4D55-A131-4E7D209025A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA730BC-6A1D-4D55-A131-4E7D209025A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA730BC-6A1D-4D55-A131-4E7D209025A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA730BC-6A1D-4D55-A131-4E7D209025A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F5B083A-6417-4BEA-AFF9-2997349345B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5B083A-6417-4BEA-AFF9-2997349345B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F5B083A-6417-4BEA-AFF9-2997349345B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F5B083A-6417-4BEA-AFF9-2997349345B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{506180C1-BCC9-4005-9120-CFE00E323BD6} = {BB2F1DF5-9345-40A1-8A84-D99C82256EAB}
+		{0F5B083A-6417-4BEA-AFF9-2997349345B9} = {BB2F1DF5-9345-40A1-8A84-D99C82256EAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {271898E4-61C1-4A2D-AFA2-8DC3C508BC4A}
