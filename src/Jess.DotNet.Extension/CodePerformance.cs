@@ -26,7 +26,7 @@ namespace Jess.DotNet.Extension
             TimeSpan timespan = stopwatch.Elapsed;
             return timespan.Milliseconds;
         }
-        
+
         /// <summary>
         /// 异步记录运行时间
         /// </summary>
@@ -102,6 +102,35 @@ namespace Jess.DotNet.Extension
             action().Wait();
 
             stopwatch.Stop();
+            TimeSpan timespan = stopwatch.Elapsed;
+            return timespan.Milliseconds;
+        }
+
+        /// <summary>
+        /// 异步记录运行时间
+        /// </summary>
+        /// <param name="action"></param>
+        /// <returns></returns>
+        public static async Task<int> TimeAsync(Func<Task> action)
+        {
+            Stopwatch stopwatch = new Stopwatch();
+
+#if NET40
+            await Task.Factory.StartNew(() =>
+            {
+                stopwatch.Start();
+                action().Wait();
+                stopwatch.Stop();
+            });
+#else
+            await Task.Run(() =>
+            {
+                stopwatch.Start();
+                action().Wait();
+                stopwatch.Stop();
+            });
+#endif
+
             TimeSpan timespan = stopwatch.Elapsed;
             return timespan.Milliseconds;
         }

@@ -86,5 +86,20 @@ namespace Jess.DotNet.Extension.Test
             Assert.True(time >= 100);
         }
 
+        [Fact]
+        public async void TimeTaskFuncAsyncTest()
+        {
+            int time = await CodePerformance.TimeAsync(async () =>
+             {
+                 await Task.Run(() =>
+                 {
+                     Thread.Sleep(100);
+                     Console.WriteLine("Test!");
+                 });
+             });
+            output.WriteLine(time.ToString());
+            Assert.True(time >= 100);
+        }
+
     }
 }
