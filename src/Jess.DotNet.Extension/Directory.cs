@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Jess.DotNet.Extension
 {
-    public static class Directory
+    public static class DirectoryExt
     {
         /// <summary>
         /// Copy Files in Directory
