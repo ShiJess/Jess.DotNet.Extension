@@ -6,8 +6,7 @@
 
 # 项目内容介绍
 
-* RegExp系列：正则表达式系列库
-* Jess.ImageProcessing：图片处理库
+
 
 ## RoadMap
 
@@ -20,3 +19,8 @@
 * 注册证书生成/读取dll
     * 加解密函数封装
 * 图片转ico dll
+
+## 其他参考
+
+//using System.Web.Security;
+//FormsAuthentication.HashPasswordForStoringInConfigFile();

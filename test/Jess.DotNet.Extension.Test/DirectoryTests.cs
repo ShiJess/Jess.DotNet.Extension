@@ -11,7 +11,7 @@ namespace Jess.DotNet.Extension.Test
             string sourcedir = AppDomain.CurrentDomain.BaseDirectory;
             string targetdir = System.IO.Path.Combine(System.IO.Directory.GetParent(sourcedir).FullName, "target");
 
-            Directory.Copy(sourcedir, targetdir);
+            DirectoryExt.Copy(sourcedir, targetdir);
         }
     }
 }
