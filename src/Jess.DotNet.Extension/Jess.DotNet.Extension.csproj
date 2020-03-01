@@ -29,8 +29,4 @@
     <PackageReference Include="System.Drawing.Common" Version="4.6.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <!--<Reference Include="System.Web" />-->
-  </ItemGroup>
-
 </Project>
