@@ -10,8 +10,8 @@
     <ApplicationIcon />
     <Description>https://github.com/ShiJess/Jess.DotNet.Extension/blob/master/ReadMe.md</Description>
     <PackageReleaseNotes>add cryptor process;</PackageReleaseNotes>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>Link.WPF.Toolkit.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>   
+    <PackageIcon>Jess.DotNet.Extension.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>   
