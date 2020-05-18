@@ -3,11 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{3F738F47-8B8C-432A-B62F-59E84CABE3B9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Test", "_Test", "{3F738F47-8B8C-432A-B62F-59E84CABE3B9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jess.DotNet.Extension", "src\Jess.DotNet.Extension\Jess.DotNet.Extension.csproj", "{42F7C9D1-C4EE-400F-AF57-A277927910B2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jess.DotNet.Extension.Test", "test\Jess.DotNet.Extension.Test\Jess.DotNet.Extension.Test.csproj", "{7C5E863B-4656-49F3-9EEA-A51840250393}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jess.FileValidation.MD5", "src\Jess.FileValidation.MD5\Jess.FileValidation.MD5.csproj", "{37FBDB9B-CB67-44F4-9353-3EB9FE50352B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jess.FileValidation.MD5Caller", "src\Jess.FileValidation.MD5Caller\Jess.FileValidation.MD5Caller.csproj", "{07627A75-E716-4560-9791-B5B0D85CF910}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MD5", "MD5", "{78FF8DF5-27A1-4C9C-A790-2869014538C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MD5", "MD5", "{9691538F-99F9-4811-82D7-737CE7A1FA9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{3F21EEA1-6C6D-4446-9DE5-EA59BDCC09E2}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +36,23 @@ Global
 		{7C5E863B-4656-49F3-9EEA-A51840250393}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C5E863B-4656-49F3-9EEA-A51840250393}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C5E863B-4656-49F3-9EEA-A51840250393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37FBDB9B-CB67-44F4-9353-3EB9FE50352B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FBDB9B-CB67-44F4-9353-3EB9FE50352B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FBDB9B-CB67-44F4-9353-3EB9FE50352B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FBDB9B-CB67-44F4-9353-3EB9FE50352B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07627A75-E716-4560-9791-B5B0D85CF910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07627A75-E716-4560-9791-B5B0D85CF910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07627A75-E716-4560-9791-B5B0D85CF910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07627A75-E716-4560-9791-B5B0D85CF910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7C5E863B-4656-49F3-9EEA-A51840250393} = {3F738F47-8B8C-432A-B62F-59E84CABE3B9}
+		{37FBDB9B-CB67-44F4-9353-3EB9FE50352B} = {78FF8DF5-27A1-4C9C-A790-2869014538C3}
+		{07627A75-E716-4560-9791-B5B0D85CF910} = {78FF8DF5-27A1-4C9C-A790-2869014538C3}
+		{9691538F-99F9-4811-82D7-737CE7A1FA9F} = {3F738F47-8B8C-432A-B62F-59E84CABE3B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E765CA4-CEB6-4E75-B30F-7BA2E298A6F2}

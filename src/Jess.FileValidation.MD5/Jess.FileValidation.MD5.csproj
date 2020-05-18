@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net40;net45;net472;netstandard2.0</TargetFrameworks>
+    <AssemblyName>jmd5</AssemblyName>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+  
+
+  <ItemGroup>
+    <None Include="..\Jess.FileValidation.MD5Caller\bin\Debug\jmd5.exe">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+   <None Include="..\Jess.FileValidation.MD5Caller\bin\Debug\jmd5.exe.config">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
