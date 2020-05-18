@@ -1,6 +1,11 @@
 ## Jess.DotNet.Extension
 
-[![NuGet](https://img.shields.io/nuget/v/Jess.DotNet.Extension.svg)](https://www.nuget.org/packages/Jess.DotNet.Extension/)
+
+|Package|Nuget|DownLoads|
+|:--:|:--:|:--:|
+|Jess.DotNet.Extension|[![Jess.DotNet.Extension](https://img.shields.io/nuget/v/Jess.DotNet.Extension.svg)](https://www.nuget.org/packages/Jess.DotNet.Extension/)|[![Jess.DotNet.Extension](https://img.shields.io/nuget/dt/Jess.DotNet.Extension)](https://www.nuget.org/packages/Jess.DotNet.Extension/)|
+|Jess.DotNet.ReportViewerExtension.Winforms|[![Jess.DotNet.ReportViewerExtension.Winforms](https://img.shields.io/nuget/v/Jess.DotNet.ReportViewerExtension.Winforms.svg)](https://www.nuget.org/packages/Jess.DotNet.ReportViewerExtension.Winforms/)|[![Jess.DotNet.ReportViewerExtension.Winforms](https://img.shields.io/nuget/dt/Jess.DotNet.ReportViewerExtension.Winforms)](https://www.nuget.org/packages/Jess.DotNet.ReportViewerExtension.Winforms/)|
+
 
 ------------------
 
@@ -23,5 +28,7 @@
 
 ## 其他参考
 
-//using System.Web.Security;
-//FormsAuthentication.HashPasswordForStoringInConfigFile();
+``` csharp
+using System.Web.Security;
+FormsAuthentication.HashPasswordForStoringInConfigFile();
+```

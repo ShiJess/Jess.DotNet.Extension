@@ -28,11 +28,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MD5", "MD5", "{78FF8DF5-27A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MD5", "MD5", "{9691538F-99F9-4811-82D7-737CE7A1FA9F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{3F21EEA1-6C6D-4446-9DE5-EA59BDCC09E2}"
-	ProjectSection(SolutionItems) = preProject
-		ReadMe.md = ReadMe.md
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
