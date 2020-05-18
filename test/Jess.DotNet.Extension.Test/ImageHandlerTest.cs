@@ -1,16 +1,14 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
-using Jess.ImageProcessing;
+using Xunit;
 
-namespace ImageProcessingTest
+namespace Jess.DotNet.Extension.Test
 {
-    [TestClass]
-    public class UnitTest1
+    public class ImageHandlerTest
     {
-       
 
-        [TestMethod]
+
+        [Fact]
         public void TestCutSquare()
         {
             string exportPath0 = "..\\..\\..\\TestDataFile\\Input\\testimg.JPG";
@@ -23,9 +21,9 @@ namespace ImageProcessingTest
             using (FileStream fs1 = new FileStream(exportPath1, FileMode.Open))
             {
                 string savepath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "OutPut");
-                if (!Directory.Exists(savepath))
+                if (!System.IO.Directory.Exists(savepath))
                 {
-                    Directory.CreateDirectory(savepath);
+                    System.IO.Directory.CreateDirectory(savepath);
                 }
                 string savefilename = Path.Combine(savepath, DateTime.Now.ToString("yyyy-MM-dd-HHMMss") + "cut.jpg");
                 ImageHandler.CutSquareScale(fs1, savefilename, 100);
@@ -34,7 +32,7 @@ namespace ImageProcessingTest
             }
         }
 
-        [TestMethod]
+        [Fact]
         public void TestAddWatermark()
         {
             string exportPath0 = "..\\..\\..\\TestDataFile\\Input\\testimg.JPG";
@@ -49,9 +47,9 @@ namespace ImageProcessingTest
             using (FileStream fs1 = new FileStream(exportPath1, FileMode.Open))
             {
                 string savepath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "OutPut");
-                if (!Directory.Exists(savepath))
+                if (!System.IO.Directory.Exists(savepath))
                 {
-                    Directory.CreateDirectory(savepath);
+                    System.IO.Directory.CreateDirectory(savepath);
                 }
                 string savefilename = Path.Combine(savepath, DateTime.Now.ToString("yyyy-MM-dd-HHMMss") + "watermark.jpg");
                 ImageHandler.AddWatermark(fs1, savefilename, "水印测试", watermarkimgpth);

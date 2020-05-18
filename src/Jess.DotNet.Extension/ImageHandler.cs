@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 
-namespace Jess.ImageProcessing
+namespace Jess.DotNet.Extension
 {
     /// <summary>
     /// 图片处理类
@@ -26,7 +26,7 @@ namespace Jess.ImageProcessing
         /// <param name="quality">质量（0-100）</param>
         public static void CutSquare(Stream sourcefile, string savefilepath, double cutwidth, double cutheight = 0, int quality = 100)
         {
-
+          
 
         }
 
@@ -43,8 +43,8 @@ namespace Jess.ImageProcessing
 
             //创建目录 —— 保存文件
             string dir = Path.GetDirectoryName(savefilepath);
-            if (!Directory.Exists(dir))
-                Directory.CreateDirectory(dir);
+            if (!System.IO.Directory.Exists(dir))
+                System.IO.Directory.CreateDirectory(dir);
 
             //原始图片（获取原始图片创建对象，并使用流中嵌入的颜色管理信息）
             System.Drawing.Image initImage = System.Drawing.Image.FromStream(sourcefile, true);
@@ -299,6 +299,6 @@ namespace Jess.ImageProcessing
             initImage.Dispose();
         }
         #endregion
-                      
+
     }
 }

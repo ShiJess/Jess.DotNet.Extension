@@ -6,8 +6,7 @@
 
 # 项目内容介绍
 
-* RegExp系列：正则表达式系列库
-* Jess.ImageProcessing：图片处理库
+* 数字区间比较-Double.Between
 
 ## RoadMap
 
@@ -17,5 +16,12 @@
     * 字符串编码转换 —— utf8 ，gb2312【扩展方法】
 * String扩展方法处理正则
 * 数字转中文&中文大写
-
+* 注册证书生成/读取dll
+    * 加解密函数封装
+* 图片转ico dll
 * MD5验证添加target，自动添加到项目target中执行生成
+
+## 其他参考
+
+//using System.Web.Security;
+//FormsAuthentication.HashPasswordForStoringInConfigFile();

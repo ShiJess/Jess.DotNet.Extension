@@ -5,10 +5,11 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace RegExpLib
+namespace Jess.DotNet.Extension
 {
     /// <summary>
     /// 正则表达式验证
+    /// regular expression
     /// </summary>
     public class RegExp
     {
