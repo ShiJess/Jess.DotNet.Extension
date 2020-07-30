@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net40;</TargetFrameworks>
     <UseWinform>true</UseWinform>
-    <Version>0.0.0.1</Version>
+    <Version>0.0.0.2</Version>
     <Authors>Jess</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/ShiJess/Jess.DotNet.Extension/tree/master/src/Jess.DotNet.ReportViewerExtension.Winforms</PackageProjectUrl>
@@ -14,6 +14,7 @@
     <PackageId>Jess.DotNet.ReportViewerExtension.Winforms</PackageId>
     <Product>Jess.DotNet.ReportViewerExtension.Winforms</Product>
     <PackageIcon>Jess.DotNet.Extension.png</PackageIcon>
+    <PackageReleaseNotes>修复ReportViewer内存泄漏问题。</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

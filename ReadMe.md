@@ -13,6 +13,24 @@
 
 * 数字区间比较-Double.Between
 
+## ReportViewer注意事项
+
+* ReportViewer存在内存泄漏问题，故在代码中添加：
+``` csharp
+    LocalReport.ReleaseSandboxAppDomain();
+```
+* LocalReport利用了`.NET Remoting`处理报表，其内部释放时间有几分钟，所以**建议在程序起始出添加以下代码**：
+``` csharp
+    using System.Runtime.Remoting.Lifetime;
+```
+``` csharp
+    //具体时间可依据自身需求调节
+    LifetimeServices.LeaseTime = TimeSpan.FromSeconds(5);
+    LifetimeServices.LeaseManagerPollTime = TimeSpan.FromSeconds(5);
+    LifetimeServices.RenewOnCallTime = TimeSpan.FromSeconds(1);
+    LifetimeServices.SponsorshipTimeout = TimeSpan.FromSeconds(5);
+```
+
 ## RoadMap
 
 * TypeConvert扩展库

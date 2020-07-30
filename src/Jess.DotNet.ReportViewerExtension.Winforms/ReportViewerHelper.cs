@@ -29,19 +29,29 @@ namespace Jess.DotNet.ReportViewerExtension.Winforms
         {
             Warning[] warnings;
             string[] streamIds;
+            byte[] bytes;
             string mimeType = string.Empty;
             string encoding = string.Empty;
             string extension = string.Empty;
 
-            LocalReport lr = new LocalReport();
-            lr.ReportPath = templatepath;
-            lr.DataSources.Add(new ReportDataSource(datasetname, datasource));
-            if (rparams != null)
+            //LocalReport lr = new LocalReport();
+            using (LocalReport lr = new LocalReport())
             {
-                lr.SetParameters(rparams);
-            }
+                lr.ReportPath = templatepath;
+                lr.DataSources.Add(new ReportDataSource(datasetname, datasource));
+                if (rparams != null)
+                {
+                    lr.SetParameters(rparams);
+                }
 
-            byte[] bytes = lr.Render("PDF", null, out mimeType, out encoding, out extension, out streamIds, out warnings);
+                bytes = lr.Render("PDF", null, out mimeType, out encoding, out extension, out streamIds, out warnings);
+
+
+                lr.DataSources.Clear();
+                // lr.Dispose();
+                lr.ReleaseSandboxAppDomain();
+            }
+            GC.Collect(0);
 
             using (FileStream fs = File.OpenWrite(fullfilename))
             {
@@ -102,6 +112,8 @@ namespace Jess.DotNet.ReportViewerExtension.Winforms
                 return stream;
             };
             lr.Render("Image", deviceInfo, createStream, out warnings);
+
+            lr.ReleaseSandboxAppDomain();
 
             foreach (Stream stream in m_streams)
                 stream.Position = 0;
@@ -180,9 +192,13 @@ namespace Jess.DotNet.ReportViewerExtension.Winforms
                 };
                 lr.Render("Image", deviceInfo, createStream, out warnings);
 
+                lr.ReleaseSandboxAppDomain();
+
                 foreach (Stream stream in m_streams)
                     stream.Position = 0;
 
+                //控制上一个打印完成后打印下一个
+                //pd.EndPrint += (sender,e) => { };
                 pd.Print();
             }
 
