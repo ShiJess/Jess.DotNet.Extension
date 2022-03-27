@@ -36,6 +36,13 @@ namespace Jess.DotNet.Extension
             return d;
         }
 
+        public static long ToUnix(DateTime dateTime)
+        {
+            var time = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;//ms
+            //DateTimeOffset.Now.ToUnixTimeMilliseconds();
+            
+            return time;
+        }
     }
 
     /// <summary>

@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jess.DotNet.Extension.Test", "test\Jess.DotNet.Extension.Test\Jess.DotNet.Extension.Test.csproj", "{7C5E863B-4656-49F3-9EEA-A51840250393}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A8DF1C3E-08CB-4D1B-AA9B-A30E7EE5C462}"
+	ProjectSection(SolutionItems) = preProject
+		docs\ExtensionMethod.md = docs\ExtensionMethod.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{9EF4D562-EFE6-4860-8F72-06C926B08505}"
 	ProjectSection(SolutionItems) = preProject
